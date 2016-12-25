@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.mumayi.cameraphotodemo.view.RoundedImageView
+        android:id="@+id/iv_submit_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/default_avatar" />
+
+    <EditText
+        android:id="@+id/ed_submit_nickname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_submit_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:gravity="center"
+        android:hint="输入你的昵称"
+        android:singleLine="true"
+        android:textColor="@color/nickname" />
+
+    <EditText
+        android:id="@+id/ed_submit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed_submit_nickname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text"
+        android:gravity="left|top"
+        android:hint="说出你的段子"
+        android:lines="5"
+        android:textColor="@color/nickname" />
+
+    <ImageView
+        android:id="@+id/iv_submit_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/ed_submit_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/iv_add_pic" />
+
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_submit_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="提交" />
+
+    <GridView
+        android:id="@+id/rl_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_submit"
+        android:layout_marginTop="10dp"
+        android:columnWidth="15dp"
+        android:numColumns="3" />
+
+</RelativeLayout>
